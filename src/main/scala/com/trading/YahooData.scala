@@ -1,21 +1,17 @@
+package com.trading
 
-import java.time.{Instant, LocalDate, ZoneId}
-import java.time.format.DateTimeFormatter
+
+import com.fasterxml.jackson.databind.ObjectMapper
+import com.fasterxml.jackson.module.scala.DefaultScalaModule
 import org.apache.http.client.methods.HttpGet
 import org.apache.http.impl.client.HttpClients
 import org.apache.http.util.EntityUtils
-import com.fasterxml.jackson.databind.ObjectMapper
-import com.fasterxml.jackson.module.scala.DefaultScalaModule
-import org.apache.spark.sql.catalyst.dsl.expressions.{DslExpression, doubleToLiteral, longToLiteral}
 
-import scala.collection.Seq
-import scala.collection.mutable.ListBuffer
 import java.net.URLEncoder
 import java.nio.charset.StandardCharsets
-import java.util.Locale
-import scala.concurrent.{ExecutionContext, Future}
+import java.time.format.DateTimeFormatter
+import java.time.{Instant, ZoneId}
 import scala.jdk.CollectionConverters.IteratorHasAsScala
-import scala.math.Fractional.Implicits.infixFractionalOps
 
 
 object YahooData {

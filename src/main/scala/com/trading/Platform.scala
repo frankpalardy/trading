@@ -1,3 +1,5 @@
+package com.trading
+
 import org.apache.spark.sql.SparkSession
 
 import java.net.URL
@@ -80,8 +82,8 @@ object Platform {
     )
 
     val theoreticalPrice = OptionPriceCalculator.calculateOptionPrice(
-      currentPrice = 500,
-      strikePrice = 580.0,
+      currentPrice = 573,
+      strikePrice = 575.0,
       BusinessDayCalculator.calculateTimeToExpiration("2025-03-15"),
       riskFreeRate = 0.0454,
       futureVIX,

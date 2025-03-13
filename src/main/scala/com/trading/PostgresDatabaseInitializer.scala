@@ -1,6 +1,6 @@
-import java.sql.{Connection, DriverManager, SQLException, Statement}
+package com.trading
 
-import scala.concurrent.{Future, ExecutionContext}
+import java.sql.{Connection, DriverManager, SQLException, Statement}
 
 object PostgresConfig {
   val url = "jdbc:postgresql://localhost:5432/trades"

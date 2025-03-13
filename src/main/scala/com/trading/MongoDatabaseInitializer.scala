@@ -1,6 +1,8 @@
+package com.trading
+
 import org.mongodb.scala._
-import org.mongodb.scala.model.Indexes
 import org.mongodb.scala.bson.collection.immutable.Document
+import org.mongodb.scala.model.Indexes
 import org.springframework.context.annotation.Configuration
 
 import scala.concurrent.ExecutionContext.Implicits.global

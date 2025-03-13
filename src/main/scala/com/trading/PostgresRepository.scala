@@ -1,6 +1,7 @@
-import java.sql.{Connection, ResultSet, SQLException}
-import scala.concurrent.{Future, ExecutionContext}
-import scala.util.{Failure, Success, Try}
+package com.trading
+
+import java.sql.{ResultSet, SQLException}
+import scala.concurrent.{ExecutionContext, Future}
 
 class PostgresRepository(implicit ec: ExecutionContext) {
 

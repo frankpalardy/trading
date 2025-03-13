@@ -1,3 +1,5 @@
+package com.trading
+
 import org.apache.spark.sql.{DataFrame, SparkSession}
 
 case class Asset(

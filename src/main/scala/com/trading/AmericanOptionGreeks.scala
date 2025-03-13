@@ -1,5 +1,7 @@
+package com.trading
+
 import scala.annotation.tailrec
-import scala.math.{abs, exp, log, max, min, pow, sqrt}
+import scala.math.{abs, exp, pow, sqrt}
 
 object AmericanOptionGreeks {
   case class AmericanOptionGreeks(price: Double, impliedVolatility: Double, delta: Double, gamma: Double, theta: Double, vega: Double, rho: Double)

@@ -1,7 +1,8 @@
+package com.trading
+
 
 
 import scala.annotation.tailrec
-import scala.math.{abs, exp, log, max, min, pow, sqrt}
 import scala.math._
 
 object OptionGreeks {

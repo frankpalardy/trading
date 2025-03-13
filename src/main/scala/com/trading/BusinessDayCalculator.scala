@@ -1,3 +1,5 @@
+package com.trading
+
 object BusinessDayCalculator {
   // US Market Holidays (fixed and floating)
   private val fixedHolidays = Set(

@@ -1,3 +1,5 @@
+package com.trading
+
 object VolatilityCalculator {
   def calculateHistoricalVolatility(stockDataWeek: List[Asset]): Double = {
     // Get daily closing prices from the week

@@ -1,21 +1,20 @@
-import ai.djl.ndarray.{NDArray, NDList, NDManager}
-import ai.djl.ndarray.types.{DataType, Shape}
-import ai.djl.training.{DefaultTrainingConfig, GradientCollector, ParameterStore, Trainer}
-import ai.djl.training.dataset.ArrayDataset
-import ai.djl.training.loss.Loss
-import ai.djl.training.optimizer.Optimizer
-import ai.djl.training.listener.{EarlyStoppingListener, TrainingListener}
-import ai.djl.nn.{Block, Parameter, SequentialBlock}
+package com.trading
+
 import ai.djl.Model
 import ai.djl.engine.Engine
 import ai.djl.ndarray.index.NDIndex
+import ai.djl.ndarray.types.{DataType, Shape}
+import ai.djl.ndarray.{NDArray, NDList, NDManager}
+import ai.djl.nn.SequentialBlock
+import ai.djl.training.dataset.ArrayDataset
 import ai.djl.training.evaluator.Accuracy
+import ai.djl.training.listener.TrainingListener
+import ai.djl.training.loss.Loss
+import ai.djl.training.optimizer.Optimizer
 import ai.djl.training.tracker.Tracker
-import ai.djl.training.util.ProgressBar
+import ai.djl.training.{DefaultTrainingConfig, ParameterStore}
 
 import java.nio.file.Paths
-import ai.djl.util.PairList
-
 import java.time.{Instant, LocalDateTime, ZoneId}
 
 object LSTMPredictor {

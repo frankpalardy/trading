@@ -1,8 +1,9 @@
+package com.trading
+
+import ai.djl.ndarray.NDList
 import ai.djl.training.Trainer
-import ai.djl.training.dataset.Batch
 import ai.djl.training.listener.TrainingListener
 import ai.djl.training.listener.TrainingListener.BatchData
-import ai.djl.ndarray.NDList
 
 class CustomEarlyStoppingListener(patience: Int, minImprovement: Float) extends TrainingListener {
   private var bestLoss = Float.MaxValue
